@@ -1,0 +1,9 @@
+{
+  "name": "creator-hub-api",
+  "version": "1.0.0",
+  "description": "Notion API proxy for Jess's Creator Hub",
+  "private": true,
+  "engines": {
+    "node": "18.x"
+  }
+}

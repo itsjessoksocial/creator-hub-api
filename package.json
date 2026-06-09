@@ -1,9 +1,13 @@
 {
-  "name": "creator-hub-api",
-  "version": "1.0.0",
-  "description": "Notion API proxy for Jess's Creator Hub",
-  "private": true,
-  "engines": {
-    "node": "24.x"
-  }
+  "version": 2,
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "*" },
+        { "key": "Access-Control-Allow-Methods", "value": "GET,POST,PATCH,DELETE,OPTIONS" },
+        { "key": "Access-Control-Allow-Headers", "value": "Content-Type" }
+      ]
+    }
+  ]
 }
